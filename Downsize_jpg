@@ -1,0 +1,13 @@
+from PIL import Image
+import os
+
+os.getcwd()
+os.chdir(r'C:\Users\Markos\MyPythonScripts')
+os.getcwd()
+
+foo = Image.open(r'C:\Users\Markos\MyPythonScripts\poa.jpg')
+foo.size
+foo = foo.resize((4000,3000),Image.ANTIALIAS)
+foo.save(r'C:\Users\Markos\MyPythonScripts\address.jpg',quality=95)
+foo.save(r'C:\Users\Markos\MyPythonScripts\address_opt.jpg',optimize=True,quality=95)
+
